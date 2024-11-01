@@ -10,7 +10,7 @@ public class DemoController {
     @Autowired
     KafkaTemplate<String,Book> kafkaTemplate;
     // topic to which data will be published
-    // TOPIC can be also configured in kafka config as well, then we don't need to define here.
+    // TOPIC will get automatically created in config if not defined already.
     private static final String TOPIC = "NewTopic";
 
     @PostMapping("/publish")
