@@ -11,7 +11,7 @@ import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 
-@EnableKafka
+@EnableKafka // enables defining Kafka listeners using the @KafkaListener annotation.
 @Configuration
 public class KafkaConfig {
 

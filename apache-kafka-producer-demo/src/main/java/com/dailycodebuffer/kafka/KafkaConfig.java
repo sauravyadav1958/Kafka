@@ -32,11 +32,12 @@ public class KafkaConfig {
     return new KafkaTemplate<>(producerFactory());
   }
 
-
 //  @Bean
 //  public NewTopic topic() {
 //    return TopicBuilder
 //        .name("NewTopic")
+//        .partitions(3)
+//        .replicas(3)
 //        .build();
 //  }
 }
